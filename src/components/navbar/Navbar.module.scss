@@ -1,0 +1,53 @@
+@import '../../Variables.module';
+
+.navContainer {
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $nav-blue;
+  padding: 0px 10px;
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0px 10px 0px 0px;
+
+    li {
+      margin-right: 10%;
+    }
+
+    a {
+      text-decoration: none;
+      color: $white;
+    }
+  }
+
+  .logo {
+    color: white;
+    margin:0px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: $breakpoint-md)  {
+  .navContainer {
+    flex-direction: column;
+
+    ul {
+      margin: 0px;
+      padding: 0px;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 10px;
+
+      li {
+       margin-bottom: 10%;
+      }
+    }
+  }
+}
+
+
+
+
